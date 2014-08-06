@@ -1,0 +1,364 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{none}
+    \entry{yemini2013}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=b0cc0c2084d5f1d543a978dee3af8edd}{Yemini}{Y\bibinitperiod}{Eviatar}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=374d7531e38559c83d8416ff853b979f}{Jucikas}{J\bibinitperiod}{Tadas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=a7de508cd61047051819e7fa2e5f558d}{Grundy}{G\bibinitperiod}{Laura\bibnamedelima J}{L\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=65beda9205f769aaa02e823583809f17}{Brown}{B\bibinitperiod}{Andre\bibnamedelimb E\bibnamedelima X}{A\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim X\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=b0cc0c2084d5f1d543a978dee3af8edd}{Yemini}{Y\bibinitperiod}{Eviatar}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=374d7531e38559c83d8416ff853b979f}{Jucikas}{J\bibinitperiod}{Tadas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=a7de508cd61047051819e7fa2e5f558d}{Grundy}{G\bibinitperiod}{Laura\bibnamedelima J}{L\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=65beda9205f769aaa02e823583809f17}{Brown}{B\bibinitperiod}{Andre\bibnamedelimb E\bibnamedelima X}{A\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim X\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.}%
+      }
+      \strng{namehash}{10ea40ee376a21835211e7d557fe7577}
+      \strng{fullhash}{e90b870bdcf48b69cc7a16f8156ccf52}
+      \field{sortinit}{0}
+      \field{labeltitle}{A database of Caenorhabditis elegans behavioral phenotypes}
+      \field{journaltitle}{Nat Meth}
+      \field{month}{09}
+      \field{number}{9}
+      \field{title}{A database of Caenorhabditis elegans behavioral phenotypes}
+      \field{volume}{10}
+      \field{year}{2013}
+      \field{pages}{877\bibrangedash 879}
+    \endentry
+    \entry{ramot2008}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=363d83e0df855430ce97edb9463d7f10}{Ramot}{R\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=0682eecd5e01d24ebff7b0e6b2aa395c}{Johnson}{J\bibinitperiod}{Brandon\bibnamedelima E}{B\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=cab79260f3e35ec22882e6bface67a4f}{Berry\bibnamedelima Jr}{B\bibinitperiod\bibinitdelim J\bibinitperiod}{Tommie\bibnamedelima L}{T\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=2d528e633505be1d29430f855395a59c}{Carnell}{C\bibinitperiod}{Lucinda}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=87cfcdacb87f8ddbbff7333d12f61654}{Goodman}{G\bibinitperiod}{Miriam\bibnamedelima B}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=363d83e0df855430ce97edb9463d7f10}{Ramot}{R\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=0682eecd5e01d24ebff7b0e6b2aa395c}{Johnson}{J\bibinitperiod}{Brandon\bibnamedelima E}{B\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=cab79260f3e35ec22882e6bface67a4f}{Berry\bibnamedelima Jr}{B\bibinitperiod\bibinitdelim J\bibinitperiod}{Tommie\bibnamedelima L}{T\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=2d528e633505be1d29430f855395a59c}{Carnell}{C\bibinitperiod}{Lucinda}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=87cfcdacb87f8ddbbff7333d12f61654}{Goodman}{G\bibinitperiod}{Miriam\bibnamedelima B}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{6aa28e5e9296a2c493e58a118cd07707}
+      \strng{fullhash}{48d3d7851abd310beae74f28ea579b79}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Parallel Worm Tracker: a platform for measuring average speed and drug-induced paralysis in nematodes}
+      \field{journaltitle}{PLoS One}
+      \field{number}{5}
+      \field{title}{The Parallel Worm Tracker: a platform for measuring average speed and drug-induced paralysis in nematodes}
+      \field{volume}{3}
+      \field{year}{2008}
+      \field{pages}{e2208}
+    \endentry
+    \entry{tsibidis2007}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=66a7c302aeac1984ad76370a0e06f84f}{Tsibidis}{T\bibinitperiod}{George\bibnamedelima D}{G\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=1137aa591efd780600a471e6dfda23dd}{Tavernarakis}{T\bibinitperiod}{Nektarios}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=66a7c302aeac1984ad76370a0e06f84f}{Tsibidis}{T\bibinitperiod}{George\bibnamedelima D}{G\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=1137aa591efd780600a471e6dfda23dd}{Tavernarakis}{T\bibinitperiod}{Nektarios}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {BioMed Central Ltd}%
+      }
+      \strng{namehash}{1d7a2a679715eb1b0886b34c43352397}
+      \strng{fullhash}{1d7a2a679715eb1b0886b34c43352397}
+      \field{sortinit}{0}
+      \field{labeltitle}{Nemo: a computational tool for analyzing nematode locomotion}
+      \field{journaltitle}{BMC neuroscience}
+      \field{number}{1}
+      \field{title}{Nemo: a computational tool for analyzing nematode locomotion}
+      \field{volume}{8}
+      \field{year}{2007}
+      \field{pages}{86}
+    \endentry
+    \entry{feng2004}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=ab56275d5b5626c722a20f16772683e1}{Feng}{F\bibinitperiod}{Zhaoyang}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=2f522c4d8e34ed5ff8965125442509c5}{Cronin}{C\bibinitperiod}{Christopher\bibnamedelima J}{C\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=558e79080118a1d8bc6e2a81561cd17b}{Wittig}{W\bibinitperiod}{John\bibnamedelima H}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=22fabdb88b99f63ae4eaa540a42046aa}{Sternberg}{S\bibinitperiod}{Paul\bibnamedelima W}{P\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=ab56275d5b5626c722a20f16772683e1}{Feng}{F\bibinitperiod}{Zhaoyang}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=2f522c4d8e34ed5ff8965125442509c5}{Cronin}{C\bibinitperiod}{Christopher\bibnamedelima J}{C\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=558e79080118a1d8bc6e2a81561cd17b}{Wittig}{W\bibinitperiod}{John\bibnamedelima H}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=22fabdb88b99f63ae4eaa540a42046aa}{Sternberg}{S\bibinitperiod}{Paul\bibnamedelima W}{P\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {BioMed Central Ltd}%
+      }
+      \strng{namehash}{083f5849682d9a691e8e723a7053570c}
+      \strng{fullhash}{5f9c5080167f612ed7a27cd285f48e45}
+      \field{sortinit}{0}
+      \field{labeltitle}{An imaging system for standardized quantitative analysis of C. elegans behavior}
+      \field{journaltitle}{BMC bioinformatics}
+      \field{number}{1}
+      \field{title}{An imaging system for standardized quantitative analysis of C. elegans behavior}
+      \field{volume}{5}
+      \field{year}{2004}
+      \field{pages}{115}
+    \endentry
+    \entry{baek2002}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=11f8ac03a640449c5bb877d16f84ddd4}{Baek}{B\bibinitperiod}{Joong-Hwan}{J\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=c15db94bcbc04f8abe8bc99d0570b3ed}{Cosman}{C\bibinitperiod}{Pamela}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=ab56275d5b5626c722a20f16772683e1}{Feng}{F\bibinitperiod}{Zhaoyang}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=2c2f27e2eb5220cda2e080a787b15847}{Silver}{S\bibinitperiod}{Jay}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=11f8ac03a640449c5bb877d16f84ddd4}{Baek}{B\bibinitperiod}{Joong-Hwan}{J\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=c15db94bcbc04f8abe8bc99d0570b3ed}{Cosman}{C\bibinitperiod}{Pamela}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=ab56275d5b5626c722a20f16772683e1}{Feng}{F\bibinitperiod}{Zhaoyang}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=2c2f27e2eb5220cda2e080a787b15847}{Silver}{S\bibinitperiod}{Jay}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9c6206abaedb0e8ad874e68e3c1393c1}
+      \strng{fullhash}{1655e254062c4204efebd13e5696896d}
+      \field{sortinit}{0}
+      \field{labeltitle}{Using machine vision to analyze and classify< i> Caenorhabditis elegans</i> behavioral phenotypes quantitatively}
+      \field{journaltitle}{Journal of neuroscience methods}
+      \field{number}{1}
+      \field{title}{Using machine vision to analyze and classify< i> Caenorhabditis elegans</i> behavioral phenotypes quantitatively}
+      \field{volume}{118}
+      \field{year}{2002}
+      \field{pages}{9\bibrangedash 21}
+    \endentry
+    \entry{geng2004}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=9beac963c3444815489c35dca2d411ca}{Geng}{G\bibinitperiod}{Wei}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=c15db94bcbc04f8abe8bc99d0570b3ed}{Cosman}{C\bibinitperiod}{Pamela}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=8edbe01664d4924798d72ab8b5b75a64}{Berry}{B\bibinitperiod}{Charles\bibnamedelima C}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=ab56275d5b5626c722a20f16772683e1}{Feng}{F\bibinitperiod}{Zhaoyang}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=9beac963c3444815489c35dca2d411ca}{Geng}{G\bibinitperiod}{Wei}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=c15db94bcbc04f8abe8bc99d0570b3ed}{Cosman}{C\bibinitperiod}{Pamela}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=8edbe01664d4924798d72ab8b5b75a64}{Berry}{B\bibinitperiod}{Charles\bibnamedelima C}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=ab56275d5b5626c722a20f16772683e1}{Feng}{F\bibinitperiod}{Zhaoyang}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a6273c08163f18311ae45cf9b4bccf75}
+      \strng{fullhash}{a107cbe24422569a03930a2123ea7fb5}
+      \field{sortinit}{0}
+      \field{labeltitle}{Automatic tracking, feature extraction and classification of C. elegans phenotypes}
+      \field{journaltitle}{Biomedical Engineering, IEEE Transactions on}
+      \field{number}{10}
+      \field{title}{Automatic tracking, feature extraction and classification of C. elegans phenotypes}
+      \field{volume}{51}
+      \field{year}{2004}
+      \field{pages}{1811\bibrangedash 1820}
+    \endentry
+    \entry{geng2003}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=9beac963c3444815489c35dca2d411ca}{Geng}{G\bibinitperiod}{Wei}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=c15db94bcbc04f8abe8bc99d0570b3ed}{Cosman}{C\bibinitperiod}{Pamela}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=11f8ac03a640449c5bb877d16f84ddd4}{Baek}{B\bibinitperiod}{Joong-Hwan}{J\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=8edbe01664d4924798d72ab8b5b75a64}{Berry}{B\bibinitperiod}{Charles\bibnamedelima C}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=9beac963c3444815489c35dca2d411ca}{Geng}{G\bibinitperiod}{Wei}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=c15db94bcbc04f8abe8bc99d0570b3ed}{Cosman}{C\bibinitperiod}{Pamela}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=11f8ac03a640449c5bb877d16f84ddd4}{Baek}{B\bibinitperiod}{Joong-Hwan}{J\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=8edbe01664d4924798d72ab8b5b75a64}{Berry}{B\bibinitperiod}{Charles\bibnamedelima C}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Genetics Soc America}%
+      }
+      \strng{namehash}{a6273c08163f18311ae45cf9b4bccf75}
+      \strng{fullhash}{6639091fca62c202ff14b556718e1711}
+      \field{sortinit}{0}
+      \field{labeltitle}{Quantitative classification and natural clustering of Caenorhabditis elegans behavioral phenotypes}
+      \field{journaltitle}{Genetics}
+      \field{number}{3}
+      \field{title}{Quantitative classification and natural clustering of Caenorhabditis elegans behavioral phenotypes}
+      \field{volume}{165}
+      \field{year}{2003}
+      \field{pages}{1117\bibrangedash 1126}
+    \endentry
+    \entry{padmanabhan2012}{article}{}
+      \name{labelname}{7}{}{%
+        {{hash=a6b3ce6dafa9755fb028f55303f161af}{Padmanabhan}{P\bibinitperiod}{Venkat}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=02553aa593bfe5f104eac654f9736e59}{Khan}{K\bibinitperiod}{Zeina\bibnamedelima S}{Z\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=39168f8dc77efdc88046ed9184766f04}{Solomon}{S\bibinitperiod}{Deepak\bibnamedelima E}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=a17255322e8527672ab6fbf1b1d460c7}{Armstrong}{A\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=51e7c3fc96f8ba74cabafa7e4c929e61}{Rumbaugh}{R\bibinitperiod}{Kendra\bibnamedelima P}{K\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=9bbfb11976ae88260ce0b33948f93394}{Vanapalli}{V\bibinitperiod}{Siva\bibnamedelima A}{S\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=20c0614e474eaf7a00bb80c5bb1d55af}{Blawzdziewicz}{B\bibinitperiod}{Jerzy}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{7}{}{%
+        {{hash=a6b3ce6dafa9755fb028f55303f161af}{Padmanabhan}{P\bibinitperiod}{Venkat}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=02553aa593bfe5f104eac654f9736e59}{Khan}{K\bibinitperiod}{Zeina\bibnamedelima S}{Z\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=39168f8dc77efdc88046ed9184766f04}{Solomon}{S\bibinitperiod}{Deepak\bibnamedelima E}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=a17255322e8527672ab6fbf1b1d460c7}{Armstrong}{A\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=51e7c3fc96f8ba74cabafa7e4c929e61}{Rumbaugh}{R\bibinitperiod}{Kendra\bibnamedelima P}{K\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=9bbfb11976ae88260ce0b33948f93394}{Vanapalli}{V\bibinitperiod}{Siva\bibnamedelima A}{S\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=20c0614e474eaf7a00bb80c5bb1d55af}{Blawzdziewicz}{B\bibinitperiod}{Jerzy}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{7c2e23df07356dbc5bd680ef7d37a1f1}
+      \strng{fullhash}{65db59d457302243020ac69f1335e293}
+      \field{sortinit}{0}
+      \field{labeltitle}{Locomotion of C. elegans: a piecewise-harmonic curvature representation of nematode behavior}
+      \field{journaltitle}{PloS one}
+      \field{number}{7}
+      \field{title}{Locomotion of C. elegans: a piecewise-harmonic curvature representation of nematode behavior}
+      \field{volume}{7}
+      \field{year}{2012}
+      \field{pages}{e40121}
+    \endentry
+    \entry{kim2011}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=8f00e79ae89cb5c0ebbe3005581cad70}{Kim}{K\bibinitperiod}{Daeyeon}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=cc518488195bda17cf2bdd50b9259337}{Park}{P\bibinitperiod}{Sungsu}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=449ad28c3a34dc0f99d209e3e18de0cf}{Mahadevan}{M\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=3ffdb1cb4bab69d97daca58125282a9b}{Shin}{S\bibinitperiod}{Jennifer\bibnamedelima H}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=8f00e79ae89cb5c0ebbe3005581cad70}{Kim}{K\bibinitperiod}{Daeyeon}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=cc518488195bda17cf2bdd50b9259337}{Park}{P\bibinitperiod}{Sungsu}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=449ad28c3a34dc0f99d209e3e18de0cf}{Mahadevan}{M\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=3ffdb1cb4bab69d97daca58125282a9b}{Shin}{S\bibinitperiod}{Jennifer\bibnamedelima H}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {The Company of Biologists Ltd}%
+      }
+      \strng{namehash}{b6bbb97423140214ef06203ed28f70a4}
+      \strng{fullhash}{4d4ca07ae292249117697878a982c5da}
+      \field{sortinit}{0}
+      \field{labeltitle}{The shallow turn of a worm}
+      \field{journaltitle}{The Journal of experimental biology}
+      \field{number}{9}
+      \field{title}{The shallow turn of a worm}
+      \field{volume}{214}
+      \field{year}{2011}
+      \field{pages}{1554\bibrangedash 1559}
+    \endentry
+    \entry{stephens2008}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=359428be74eac079944d5c6f217bdd2b}{Stephens}{S\bibinitperiod}{Greg\bibnamedelima J}{G\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=590e0462bd135ebd4f8b9ec98b17a4e4}{Johnson-Kerner}{J\bibinithyphendelim K\bibinitperiod}{Bethany}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=10a2fcf9b4d2afe92cf7da76b25fc462}{Bialek}{B\bibinitperiod}{William}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=2893b1c661e373e735e8776726359e1b}{Ryu}{R\bibinitperiod}{William\bibnamedelima S}{W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=359428be74eac079944d5c6f217bdd2b}{Stephens}{S\bibinitperiod}{Greg\bibnamedelima J}{G\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=590e0462bd135ebd4f8b9ec98b17a4e4}{Johnson-Kerner}{J\bibinithyphendelim K\bibinitperiod}{Bethany}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=10a2fcf9b4d2afe92cf7da76b25fc462}{Bialek}{B\bibinitperiod}{William}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=2893b1c661e373e735e8776726359e1b}{Ryu}{R\bibinitperiod}{William\bibnamedelima S}{W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{2396ea12128bf050bbdf65e77f9c1cc1}
+      \strng{fullhash}{2ae05c98d06a6fa2ed0f3f208a63aa35}
+      \field{sortinit}{0}
+      \field{labeltitle}{Dimensionality and dynamics in the behavior of C. elegans}
+      \field{journaltitle}{PLoS computational biology}
+      \field{number}{4}
+      \field{title}{Dimensionality and dynamics in the behavior of C. elegans}
+      \field{volume}{4}
+      \field{year}{2008}
+      \field{pages}{e1000028}
+    \endentry
+    \entry{brown2013}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=2aaeb6a1050a8a6cedc8b76ffb5f90c8}{Brown}{B\bibinitperiod}{Andr{\'e}\bibnamedelima EX}{A\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=28e2d52726f48379d7310ba9a5fe0ab1}{Yemini}{Y\bibinitperiod}{Eviatar\bibnamedelima I}{E\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=a7de508cd61047051819e7fa2e5f558d}{Grundy}{G\bibinitperiod}{Laura\bibnamedelima J}{L\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=374d7531e38559c83d8416ff853b979f}{Jucikas}{J\bibinitperiod}{Tadas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=2aaeb6a1050a8a6cedc8b76ffb5f90c8}{Brown}{B\bibinitperiod}{Andr{\'e}\bibnamedelima EX}{A\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=28e2d52726f48379d7310ba9a5fe0ab1}{Yemini}{Y\bibinitperiod}{Eviatar\bibnamedelima I}{E\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=a7de508cd61047051819e7fa2e5f558d}{Grundy}{G\bibinitperiod}{Laura\bibnamedelima J}{L\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=374d7531e38559c83d8416ff853b979f}{Jucikas}{J\bibinitperiod}{Tadas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {National Acad Sciences}%
+      }
+      \strng{namehash}{3500fdc7f9490965ca11cf135f0171f3}
+      \strng{fullhash}{4b3fd99936cbb3ddf79094ca8e94462b}
+      \field{sortinit}{0}
+      \field{labeltitle}{A dictionary of behavioral motifs reveals clusters of genes affecting Caenorhabditis elegans locomotion}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{2}
+      \field{title}{A dictionary of behavioral motifs reveals clusters of genes affecting Caenorhabditis elegans locomotion}
+      \field{volume}{110}
+      \field{year}{2013}
+      \field{pages}{791\bibrangedash 796}
+    \endentry
+    \entry{hoshi2006}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=defd59a98c04b82e01acd6408e3d2030}{Hoshi}{H\bibinitperiod}{Katsunori}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=864e788a0989831a050d48103702b3e4}{Shingai}{S\bibinitperiod}{Ryuzo}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=defd59a98c04b82e01acd6408e3d2030}{Hoshi}{H\bibinitperiod}{Katsunori}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=864e788a0989831a050d48103702b3e4}{Shingai}{S\bibinitperiod}{Ryuzo}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{57f7e602a16eea37c6e5a2d3fe691cbc}
+      \strng{fullhash}{57f7e602a16eea37c6e5a2d3fe691cbc}
+      \field{sortinit}{0}
+      \field{labeltitle}{Computer-driven automatic identification of locomotion states in< i> Caenorhabditis elegans</i>}
+      \field{journaltitle}{Journal of neuroscience methods}
+      \field{number}{2}
+      \field{title}{Computer-driven automatic identification of locomotion states in< i> Caenorhabditis elegans</i>}
+      \field{volume}{157}
+      \field{year}{2006}
+      \field{pages}{355\bibrangedash 363}
+    \endentry
+  \endsortlist
+  \missing{huang2006}
+  \missing{stephens2010}
+\endrefsection
+\endinput
+

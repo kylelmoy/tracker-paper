@@ -1,0 +1,15 @@
+[0] Config.pm:318> INFO - This is Biber 1.8
+[0] Config.pm:321> INFO - Logfile is 'methodology.blg'
+[95] biber:275> INFO - === Wed Jun 11, 2014, 21:13:36
+[95] Biber.pm:333> INFO - Reading 'methodology.bcf'
+[180] Utils.pm:169> WARN - Warning: Found biblatex control file version 2.6, expected version 2.5
+[181] Biber.pm:630> INFO - Found 7 citekeys in bib section 0
+[200] Biber.pm:3053> INFO - Processing section 0
+[218] Biber.pm:3190> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[221] bibtex.pm:808> INFO - Found BibTeX data source 'biblio.bib'
+[260] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[260] Biber.pm:2945> INFO - Sorting 'entry' list 'none' keys
+[260] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[272] bbl.pm:482> INFO - Writing 'methodology.bbl' with encoding 'ascii'
+[273] bbl.pm:555> INFO - Output to methodology.bbl
+[273] Biber.pm:105> INFO - WARNINGS: 1

@@ -1,0 +1,37 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Background}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Acquiring Video for Analysis}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Quantifying Worm Behavior through Video Analysis}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Results and Discussion}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Real-time Processing Requirement}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Frame rate}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Image processing efficiency}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Limitations}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Hardware Integration}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Motor Considerations}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Availability}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Conclusions}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Installation}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1}Setup Machine: \textbf {\texttt {setup-machine.sh}}}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2}OpenCV Installation Script: \texttt {\textbf {opencv.sh}}}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3}Changes to OpenCV source}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Code}{13}

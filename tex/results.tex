@@ -1,0 +1,66 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+\section{Results and Discussion}
+This section reports some of the more challenging aspects of this project as well as important design and implementation considerations. 
+
+\subsection{Real-time Processing Requirement}
+Since the worm under study is only 1 mm long, it's impossible to watch its locomotory behavior without the intermediary of a microscope or zoom-lens mounted camera. This forces a requirement that the recording should occur with a known frame rate in order to ensure fidelity of time scales. This will ensure that a given behavior is represented by the recording at the same speed at which it is occuring. A known, consistent frame rate will be important to quantify motion features dependent on time such as velocity and acceleration. For the tracking portion of this video acquisition system, the \verb|wormFinder()| has to work fast enough to recenter the worm before it leaves the field of view. 
+
+\paragraph{Frame rate}
+Given that this system needs to work real-time, the main development concern has been to acquire, process and record images from the camera in real-time at the frame rate delivered by the camera. However, 45 fps may supply many sequential frames in which the worm has barely moved a pixel. A consideration for whether or not to lower the frame rate lies in the length of videos we plan on acquiring. For our given problem, we will be recording video for a longer timescale than is traditionally done, between 45 min and 1h30 min. An important consideration for our system (both for acquisition and feature extraction) will be its robustness across a large data set. In the event we down-sample our recording (due to space or inability to capture 45 fps), we will need to weigh the computational and space benefit over the potential loss of image data (that will not be able to be later reconstructed).  
+
+\begin{table}[!htbp]
+  \centering
+  \begin{tabular}{cccccccccc}
+\toprule
+Speed & \multicolumn{9}{c}{Frame Rate (fps)} \\
+\cmidrule(lr){2-10}
+{}           &  5  &  10  &  15  &  20  &  25  &  30  &  35  &  40  &  45  \\
+\cmidrule(lr){2-10}
+500 $\mu$m/sec & 12.80 & 6.40 & 4.27 & 3.20 & 2.56 & 2.13 & 1.83 & 1.60 & 1.42 \\
+200 $\mu$m/sec & 5.12 & 2.56 & 1.71 & 1.28 & 1.02 & 0.85 & 0.73 & 0.64 & 0.57 \\
+\bottomrule
+  \end{tabular}
+  \caption{Possible distance travelled between frames (in pixels) for different frame rates and maximal worm speeds (assuming 1280 by 960 resolution and 10mm f.o.v.}
+  \label{tab:fr}
+\end{table}
+
+Guidance in determining an appropriate frame rate is supplied by Table~\ref{tab:fr}. For Dr. Kim's suggested maximal worm speed of 200 $\mu$m/sec, a frame rate of 45 fps means that between frames, the worm would maximally have moved 0.57 pixels. The significance of recording such small intermediate motion has not been tested, but intuition suggests that capturing motion at that precise of a time scale, may be irrelevant to quantifying a nematode's locomotory behavior. \\
+
+Our camera's maximal frame rate of 45 fps may be more appropriate for a published \cite{feng2004} maximal worm speed of 500 $\mu$/sec. A worm traveling at that speed would have moved 1.42 pixels between frames, which may be an important motion to capture and record. 
+
+\paragraph{Image processing efficiency}
+Early development of the system targeted using a Raspberry Pi as the controlling computer for both image processing and camera capture and recording. The memory available on the Raspberry Pi and the Python classes available to interface with the camera were very limiting in terms of processing. The experience, however, did inspire using computationally simple methods for finding the worm, over more common methods (and initially more robust methods) of finding the centroid of the worm from a binarized image. \\
+
+The most expensive step in the image processing sequence is applying a Gaussian filter to the difference image. When initially developing the system, I was using a matrix data structure from the \verb|numpy| Python package to hold the image. A Gaussian filter applied to a \verb|numpy| image took much longer to process than using OpenCV's \verb|CvMat| object. This would be attributed to OpenCV's efficient C++ implementation. The Gaussian step is vital in ensuring robustness to worm localization. \\
+
+Another main component of processing images to keep up with real-time capture is to subsample the image stream. A bonus consequence is that this technique allows the worm to move a little bit before the next image is processed, limiting situations in which the image difference image subtracts a current worm image from its reference.\\
+
+Recent tests on previously captured video have shown that when the search space is the entire image, worm finding can occur at 33 fps. This is improved when the search space is cropped to a minimum observed at 200 fps. 
+
+\paragraph{Limitations}
+In the current version of the tracking software, the estimated frame rate is about 22 fps, well slower than the 45 fps promised by the camera manufacturer. This could be due to structure of the program and its inefficient handling of passing around states that need to be shared by different procedures. I am investigating using either a leaner Shared State design pattern or Observer design pattern to circumvent this challenge. \\ 
+
+Another influence on frame rate is the interpreted nature of the Python language. Investigation produced evidence that the EBB \verb|centerWorm()| procedure required a second to return after being called in \verb|decideMove()|. During this time, the program waits for the \verb|centerWorm()| method to return, delaying the entire capture process. To circumvent this problem, the Callback design pattern was implememted, sending \verb|centerWorm()| to its own process without waiting for it to return. This allows for a more timely execution of the subsequent methods. \\
+
+Also, in the event that frame rate is never metronomic, a log file specifying time stamps of each written frame as well as motor instructions is generated, allowing the Feature Extractor to have true time and distance information to accurately generate time and distance features such as velocity and acceleration. These log files are generated using Python's logging library which is well worth learning. The timestamp for writing images is important given the non-metronomic nature of the image processing procedure. As fast as the image processing is and can be, the frame rate estimate changes over time given the different time it takes to find a worm in the whole image vs. a cropped search space. \\
+
+A more optimal solution to securing the actual frame rate supplied by the camera would incorporate total separation of the capture/recording and finder threads, combined into a main thread. Furthermore, design patterns under consideration will ease the process adding a GUI with controls (instead of just image display) would allow for ease in testing of some of the decision parameters discussed in \ref{ss:center}.
+
+
+\subsection{Hardware Integration} Testing the tracker is made difficult by the usual absence of one or more hardware elements (motors and camera) at time of testing (the complete tracking system lives at RFUMS.) Algorithms are often tested on previously recorded video. Certain conditional boolean controls such as color format of the input or the presence or absence of motors were necessarily built into the programmatic structure to allow for testing on multiple inputs (video or live camera).
+
+\subsection{Motor Considerations}
+An important design decision is to have a very large field of view compared to other experiments. We posit that this will result in fewer (albeit longer) motor movements. This is an important point to consider, given that frames in which which the camera is moving are often dropped for analysis as the camera motion results in a blurred worm. It might still be more beneficial to the analysis step to have more frequent, shorter movements. 
+
+\subsection{Availability}
+It is important to note that the software has been developed and tested on a Unix system (Xubuntu 14.04) and may not be compatible to a Windows environment. In general, this may be a deterrent to researchers, as few are comfortable in that environment. One of our major selling points is going to be price point relative to the current systems available from domain juggernauts. However, our program will be free and open source while most others are open source, but dependent upon having MATLAB toolboxes that are costly for the image acquisition portion.\\
+
+I would love to have this system be compatible with any PC so that any available existing computer in a laboratory could be used. The limiting factor, is going to be the camera. It may not be compatible in a Windows environment (though this hypothesis has never been specifically tested). \\
+
+\section{Conclusions}
+There may be quite a few programmatic changes to make to ensure good video (data) acquisition given many of the considerations discussed. I am hopeful that once this step is complete, more techniques of feature extraction independent of segmentation and skeletonization can be explored such as optical flow or using local invariant features such as SURF, SIFT and MSER which are more generalizable to other Computer Vision problems. 
+
+
+\end{document}

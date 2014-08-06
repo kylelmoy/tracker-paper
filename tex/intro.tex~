@@ -1,0 +1,12 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+\section{Introduction}
+The nematode \textit{Caenorhabditis elegans} is a popular organism for study due to its simple structure (959 somatic cells), and the fact that its connectome is known. Traditionally, this nematode is studied to discover the purposes of its neurons. It can be used to test drugs, etc... %more uses
+
+In general, a standard process of acquiring and analyzing worm videos: 
+
+
+
+\end{document}
+

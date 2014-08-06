@@ -1,0 +1,133 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+\section{Installation}
+\label{app:install}
+The program code is available at \url{http://github.com/vsimonis/worm3/} \\
+
+Successful development and running of the system can be achieved by running the following scripts.
+\subsection{Setup Machine: \textbf{\texttt{setup-machine.sh}}}
+Installs all of the authors favorited development tools. 
+\\
+
+\begin{lstlisting}
+#!/bin/bash
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+
+#Support programs
+echo "Getting favorite programs"
+sudo apt-get install -y emacs24
+sudo apt-get install -y texlive
+sudo apt-get install -y guake
+sudo apt-get install -y synaptic
+
+echo "Browsers and multimedia"
+sudo apt-get install -y chromium-browser
+sudo apt-get install -y flashplugin-nonfree
+sudo apt-get install -y libmono-wcf3.0a-cil
+sudo apt-get install -y vlc
+
+echo "Camera stuff"
+sudo apt-get install -y v4l-utils
+sudo apt-get install -y v4l-conf
+sudo apt-get install -y guvcview
+sudo apt-get install -y cheese
+
+
+# Setup Git & project
+sudo apt-get install -y git
+echo "Setting up Git"
+git config --global user.name "Valerie Simonis"
+git config --global user.email valerie.simonis@gmail.com
+git config --global color.ui true
+
+mkdir w3
+cd w3
+git init
+git remote add w3 https://github.com/vsimonis/worm3.git
+git pull w3 master
+echo "Git ready to use"
+
+# Python libraries
+sudo apt-get install -y python-skimage
+sudo apt-get install -y python-sklearn
+sudo apt-get install -y python-pandas
+
+chmod +x setup-machine.sh
+\end{lstlisting}
+
+\subsection{OpenCV Installation Script: \texttt{\textbf{opencv.sh}}}
+This has been adapted from multiple internet sources to allow a uniform installation of this program across development machines. It is also forwards compatible to the most recent OpenCV library. Current library in use is version 2.4.9\\
+These files are availabe in the git repository under the \texttt{install} directory. 
+\begin{lstlisting}
+version="$(wget -q -O - http://sourceforge.net/projects/opencvlibrary/files/opencv-unix 
+| egrep -m1 -o '\"[0-9](\.[0-9])+' | cut -c2-)"
+
+echo "Installing OpenCV" $version
+cd
+mkdir OpenCV
+cd OpenCV
+echo "Removing any pre-installed ffmpeg and x264"
+sudo apt-get -qq remove ffmpeg x264 libx264-dev
+echo "Installing Dependenices"
+sudo apt-get -qq install libopencv-dev 
+sudo apt-get -qq install build-essential checkinstall cmake pkg-config yasm 
+sudo apt-get -qq install libtiff4-dev libjpeg-dev libjasper-dev 
+sudo apt-get -qq install libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev 
+sudo apt-get -qq install python-dev python-numpy 
+sudo apt-get -qq install libtbb-dev libqt4-dev libgtk2.0-dev 
+sudo apt-get -qq install libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev 
+sudo apt-get -qq install x264 v4l-utils ffmpeg
+sudo apt-get -qq install libgtk2.0-dev
+
+echo "Downloading OpenCV" $version
+wget -O OpenCV-$version.zip http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/$version/opencv-"$version".zip/download
+
+echo "Installing OpenCV" $version
+unzip OpenCV-$version.zip
+cd opencv-$version
+rm -r build
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON ..
+make -j4
+sudo make install
+sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
+sudo ldconfig
+echo "OpenCV" $version "ready to be used"
+
+\end{lstlisting}
+
+\subsection{Changes to OpenCV source}
+\label{app:change}
+\begin{table}[!htbp]
+\begin{tabular}{|l | l | l|}
+\hline
+724 & \verb|capture->form.fmt.pix.pixelformat = V4L2_PIX_FMT_BGR24;| \\
+724 & \verb|capture->form.fmt.pix.pixelformat = V4L2_PIX_FMT_GREY;| \\ \hline
+734 & \verb|if (V4L2_PIX_FMT_BGR24 != capture->form.fmt.pix.pixelformat) {|\\
+734 & \verb|if (V4L2_PIX_FMT_GREY != capture->form.fmt.pix.pixelformat) {|\\ \hline
+845 & \verb|IPL_DEPTH_8U, 3, IPL_ORIGIN_TL, 4 );|\\
+845 & \verb|IPL_DEPTH_8U, 1, IPL_ORIGIN_TL, 4 );|\\ \hline
+931 & \verb|capture->imageProperties.palette = VIDEO_PALETTE_RGB24;| \\
+931 & \verb|capture->imageProperties.palette = VIDEO_PALETTE_GREY;| \\ \hline
+943 & \verb|if (capture->imageProperties.palette != VIDEO_PALETTE_RGB24) {| \\
+943 & \verb|if (capture->imageProperties.palette != VIDEO_PALETTE_GREY) {| \\ \hline
+982 & \verb|IPL_DEPTH_8U, 3, IPL_ORIGIN_TL, 4 );|\\
+982 & \verb|IPL_DEPTH_8U, 1, IPL_ORIGIN_TL, 4 );|\\ \hline
+1258 & \verb|IPL_DEPTH_8U, 3, IPL_ORIGIN_TL, 4 );|\\
+1258 & \verb|IPL_DEPTH_8U, 1, IPL_ORIGIN_TL, 4 );|\\ \hline
+1271 & \verb|IPL_DEPTH_8U, 3, IPL_ORIGIN_TL, 4 );|\\
+1271 & \verb|IPL_DEPTH_8U, 1, IPL_ORIGIN_TL, 4 );|\\ \hline
+\end{tabular}
+\caption{Changes to \texttt{cap\_libv4l.cpp}}
+\label{table:srcChange}
+\end{table}
+
+\section{Code}
+see \url{http://www.github.com/vsimonis/worm3}
+
+
+\end{document}

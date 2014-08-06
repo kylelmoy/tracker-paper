@@ -1,0 +1,156 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{none}
+    \entry{yemini2013}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=b0cc0c2084d5f1d543a978dee3af8edd}{Yemini}{Y\bibinitperiod}{Eviatar}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=374d7531e38559c83d8416ff853b979f}{Jucikas}{J\bibinitperiod}{Tadas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=a7de508cd61047051819e7fa2e5f558d}{Grundy}{G\bibinitperiod}{Laura\bibnamedelima J}{L\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=65beda9205f769aaa02e823583809f17}{Brown}{B\bibinitperiod}{Andre\bibnamedelimb E\bibnamedelima X}{A\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim X\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=b0cc0c2084d5f1d543a978dee3af8edd}{Yemini}{Y\bibinitperiod}{Eviatar}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=374d7531e38559c83d8416ff853b979f}{Jucikas}{J\bibinitperiod}{Tadas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=a7de508cd61047051819e7fa2e5f558d}{Grundy}{G\bibinitperiod}{Laura\bibnamedelima J}{L\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=65beda9205f769aaa02e823583809f17}{Brown}{B\bibinitperiod}{Andre\bibnamedelimb E\bibnamedelima X}{A\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim X\bibinitperiod}{}{}{}{}}%
+        {{hash=6d7958dfef90bfcf522555299babd90a}{Schafer}{S\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.}%
+      }
+      \strng{namehash}{10ea40ee376a21835211e7d557fe7577}
+      \strng{fullhash}{e90b870bdcf48b69cc7a16f8156ccf52}
+      \field{sortinit}{0}
+      \field{labeltitle}{A database of Caenorhabditis elegans behavioral phenotypes}
+      \field{journaltitle}{Nat Meth}
+      \field{month}{09}
+      \field{number}{9}
+      \field{title}{A database of Caenorhabditis elegans behavioral phenotypes}
+      \field{volume}{10}
+      \field{year}{2013}
+      \field{pages}{877\bibrangedash 879}
+    \endentry
+    \entry{ramot2008}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=363d83e0df855430ce97edb9463d7f10}{Ramot}{R\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=0682eecd5e01d24ebff7b0e6b2aa395c}{Johnson}{J\bibinitperiod}{Brandon\bibnamedelima E}{B\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=cab79260f3e35ec22882e6bface67a4f}{Berry\bibnamedelima Jr}{B\bibinitperiod\bibinitdelim J\bibinitperiod}{Tommie\bibnamedelima L}{T\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=2d528e633505be1d29430f855395a59c}{Carnell}{C\bibinitperiod}{Lucinda}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=87cfcdacb87f8ddbbff7333d12f61654}{Goodman}{G\bibinitperiod}{Miriam\bibnamedelima B}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=363d83e0df855430ce97edb9463d7f10}{Ramot}{R\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=0682eecd5e01d24ebff7b0e6b2aa395c}{Johnson}{J\bibinitperiod}{Brandon\bibnamedelima E}{B\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=cab79260f3e35ec22882e6bface67a4f}{Berry\bibnamedelima Jr}{B\bibinitperiod\bibinitdelim J\bibinitperiod}{Tommie\bibnamedelima L}{T\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=2d528e633505be1d29430f855395a59c}{Carnell}{C\bibinitperiod}{Lucinda}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=87cfcdacb87f8ddbbff7333d12f61654}{Goodman}{G\bibinitperiod}{Miriam\bibnamedelima B}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{6aa28e5e9296a2c493e58a118cd07707}
+      \strng{fullhash}{48d3d7851abd310beae74f28ea579b79}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Parallel Worm Tracker: a platform for measuring average speed and drug-induced paralysis in nematodes}
+      \field{journaltitle}{PLoS One}
+      \field{number}{5}
+      \field{title}{The Parallel Worm Tracker: a platform for measuring average speed and drug-induced paralysis in nematodes}
+      \field{volume}{3}
+      \field{year}{2008}
+      \field{pages}{e2208}
+    \endentry
+    \entry{tsibidis2007}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=66a7c302aeac1984ad76370a0e06f84f}{Tsibidis}{T\bibinitperiod}{George\bibnamedelima D}{G\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=1137aa591efd780600a471e6dfda23dd}{Tavernarakis}{T\bibinitperiod}{Nektarios}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=66a7c302aeac1984ad76370a0e06f84f}{Tsibidis}{T\bibinitperiod}{George\bibnamedelima D}{G\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=1137aa591efd780600a471e6dfda23dd}{Tavernarakis}{T\bibinitperiod}{Nektarios}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {BioMed Central Ltd}%
+      }
+      \strng{namehash}{1d7a2a679715eb1b0886b34c43352397}
+      \strng{fullhash}{1d7a2a679715eb1b0886b34c43352397}
+      \field{sortinit}{0}
+      \field{labeltitle}{Nemo: a computational tool for analyzing nematode locomotion}
+      \field{journaltitle}{BMC neuroscience}
+      \field{number}{1}
+      \field{title}{Nemo: a computational tool for analyzing nematode locomotion}
+      \field{volume}{8}
+      \field{year}{2007}
+      \field{pages}{86}
+    \endentry
+    \entry{hoshi2006}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=defd59a98c04b82e01acd6408e3d2030}{Hoshi}{H\bibinitperiod}{Katsunori}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=864e788a0989831a050d48103702b3e4}{Shingai}{S\bibinitperiod}{Ryuzo}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=defd59a98c04b82e01acd6408e3d2030}{Hoshi}{H\bibinitperiod}{Katsunori}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=864e788a0989831a050d48103702b3e4}{Shingai}{S\bibinitperiod}{Ryuzo}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{57f7e602a16eea37c6e5a2d3fe691cbc}
+      \strng{fullhash}{57f7e602a16eea37c6e5a2d3fe691cbc}
+      \field{sortinit}{0}
+      \field{labeltitle}{Computer-driven automatic identification of locomotion states in< i> Caenorhabditis elegans</i>}
+      \field{journaltitle}{Journal of neuroscience methods}
+      \field{number}{2}
+      \field{title}{Computer-driven automatic identification of locomotion states in< i> Caenorhabditis elegans</i>}
+      \field{volume}{157}
+      \field{year}{2006}
+      \field{pages}{355\bibrangedash 363}
+    \endentry
+    \entry{pierce1999}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=a4ff7ee94ba788466e2349cc17faeb48}{Pierce-Shimomura}{P\bibinithyphendelim S\bibinitperiod}{Jonathan\bibnamedelima T}{J\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=bcfe0d28f837cd7b2ba6e6aa3974b289}{Morse}{M\bibinitperiod}{Thomas\bibnamedelima M}{T\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=12ede61b9ab6e73be81477fc65b683ae}{Lockery}{L\bibinitperiod}{Shawn\bibnamedelima R}{S\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=a4ff7ee94ba788466e2349cc17faeb48}{Pierce-Shimomura}{P\bibinithyphendelim S\bibinitperiod}{Jonathan\bibnamedelima T}{J\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=bcfe0d28f837cd7b2ba6e6aa3974b289}{Morse}{M\bibinitperiod}{Thomas\bibnamedelima M}{T\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=12ede61b9ab6e73be81477fc65b683ae}{Lockery}{L\bibinitperiod}{Shawn\bibnamedelima R}{S\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Soc Neuroscience}%
+      }
+      \strng{namehash}{6695f7e5c09b0501358188a1e9a90379}
+      \strng{fullhash}{6695f7e5c09b0501358188a1e9a90379}
+      \field{sortinit}{0}
+      \field{labeltitle}{The fundamental role of pirouettes in Caenorhabditis elegans chemotaxis}
+      \field{journaltitle}{The journal of neuroscience}
+      \field{number}{21}
+      \field{title}{The fundamental role of pirouettes in Caenorhabditis elegans chemotaxis}
+      \field{volume}{19}
+      \field{year}{1999}
+      \field{pages}{9557\bibrangedash 9569}
+    \endentry
+  \endsortlist
+  \missing{geng2004}
+\endrefsection
+\endinput
+

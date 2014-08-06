@@ -1,0 +1,17 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+Multi-threading. In the current version of the tracking software, the estimated frame rate is about 22 fps, well slower than the 45 fps promised by the camera manufacturer. This could be due to structure of the program and its handling of passing around states that need to be shared by different procedures. An optimal solution would incorporate a graphical user interface (GUI) allowing a user to define certain parameters necessary for the current session.
+
+Testing the tracker is made difficult by the absence of one or more hardware elements (motors and camera). Algorithms are often tested on previously recorded video. Certain conditional boolean controls such as Color or Gray scale or Motors connected were necessarily built into the programmatic structure to allow for testing on multiple inputs.
+
+The video is written using the  FOURCC MJPG codec in color format (which is a little unfortunate) using a frame rate estimate calculated after each frame is 'exited'. This estimate changes over time.
+
+An influence on this is the interpreted nature of the Python language. Investigation produced evidence that the EBB centerWorm procedure required a sec to return after being called in decideMove. During this time, the program waits for the centerWorm method to return, delaying the entire capture process. To circumvent this problem, the callback design pattern was implememted , sending centerWorm to its own process and allowing the execution of the next methods.
+
+DecideMove is also never called immediately after a move, allowing the program to recover from the "just moved" state and locate the worm again.
+
+A log file specifying time stamps of each written frame as well as motor instructions is generated, allowing the Feature Extractor to have true time and distance information to accurately generate time and distance features such as velocity and acceleration. These log files are generated using Python's logging library which is well worth learning. The timestamp for writing images is important given the non-metronomic nature of the image processing procedure. As fast as the image processing is and can be, the frame rate estimate changes over time.
+
+Making video capture from camera independent from frame processing (in terms of threads) may be an improvement worth investigating. 
+\end{document}
