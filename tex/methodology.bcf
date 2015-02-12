@@ -1952,5 +1952,6 @@
     <bcf:citekey order="5">OpenCV</bcf:citekey>
     <bcf:citekey order="6">EBBsite</bcf:citekey>
     <bcf:citekey order="6">EBBcode</bcf:citekey>
+    <bcf:citekey order="7">OpenCVPython</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

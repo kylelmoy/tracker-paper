@@ -2,9 +2,25 @@
 \BOOKMARK [1][-]{section.2}{Background}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Acquiring Video for Analysis}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Quantifying Worm Behavior through Video Analysis}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{Results and Discussion}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{Real-time Processing Requirement}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Hardware Integration}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{Motor Considerations}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.4}{Availability}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Conclusions}{}% 10
+\BOOKMARK [1][-]{section.3}{Methodology}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Tracker Overview}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Hardware}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Motors and Motor Control Board}{subsection.3.2}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Imaging}{subsection.3.2}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Computer}{subsection.3.2}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Software}{section.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Finding the Worm}{subsection.3.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Deciding When to Re-center the Worm in the Field of View}{subsection.3.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Linking Hardware to Software}{subsection.3.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Main Thread}{subsection.3.3}% 15
+\BOOKMARK [1][-]{section.4}{Results and Discussion}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Real-time Processing Requirement}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.2}{Hardware Integration}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.3}{Motor Considerations}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.4}{Availability}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Conclusions}{}% 21
+\BOOKMARK [1][-]{appendix.A}{Installation}{}% 22
+\BOOKMARK [2][-]{subsection.A.1}{Setup Machine: setup-machine.sh}{appendix.A}% 23
+\BOOKMARK [2][-]{subsection.A.2}{OpenCV Installation Script: opencv.sh}{appendix.A}% 24
+\BOOKMARK [2][-]{subsection.A.3}{Changes to OpenCV source}{appendix.A}% 25
+\BOOKMARK [1][-]{appendix.B}{Code}{}% 26

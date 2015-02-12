@@ -82,7 +82,7 @@ publisher={ Nature Publishing Group, a division of Macmillan Publishers Limited.
 }
 
 @article{huang2006,
-  title={Machine vision based detection of omega bends and reversals in< i> C. elegans</i>},
+  title={Machine vision based detection of omega bends and reversals in C. elegans},
   author={Huang, Kuang-Man and Cosman, Pamela and Schafer, William R},
   journal={Journal of neuroscience methods},
   volume={158},
@@ -94,7 +94,7 @@ publisher={ Nature Publishing Group, a division of Macmillan Publishers Limited.
 
 
 @article{hoshi2006,
-  title={Computer-driven automatic identification of locomotion states in< i> Caenorhabditis elegans</i>},
+  title={Computer-driven automatic identification of locomotion states in Caenorhabditis elegans},
   author={Hoshi, Katsunori and Shingai, Ryuzo},
   journal={Journal of neuroscience methods},
   volume=157,
@@ -172,7 +172,7 @@ publisher={ Nature Publishing Group, a division of Macmillan Publishers Limited.
 }
 
 @article{baek2002,
-  title={Using machine vision to analyze and classify< i> Caenorhabditis elegans</i> behavioral phenotypes quantitatively},
+  title={Using machine vision to analyze and classify Caenorhabditis elegans behavioral phenotypes quantitatively},
   author={Baek, Joong-Hwan and Cosman, Pamela and Feng, Zhaoyang and Silver, Jay and Schafer, William R},
   journal={Journal of neuroscience methods},
   volume={118},

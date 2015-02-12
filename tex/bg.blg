@@ -1,17 +1,5 @@
-[1] Config.pm:318> INFO - This is Biber 1.8
-[2] Config.pm:321> INFO - Logfile is 'bg.blg'
-[63] biber:275> INFO - === Wed Jun 11, 2014, 20:08:17
-[63] Biber.pm:333> INFO - Reading 'bg.bcf'
-[114] Utils.pm:169> WARN - Warning: Found biblatex control file version 2.6, expected version 2.5
-[114] Biber.pm:630> INFO - Found 14 citekeys in bib section 0
-[127] Biber.pm:3053> INFO - Processing section 0
-[139] Biber.pm:3190> INFO - Looking for bibtex format file 'biblio.bib' for section 0
-[141] bibtex.pm:808> INFO - Found BibTeX data source 'biblio.bib'
-[158] Utils.pm:169> WARN - I didn't find a database entry for 'huang2006' (section 0)
-[158] Utils.pm:169> WARN - I didn't find a database entry for 'stephens2010' (section 0)
-[193] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[193] Biber.pm:2945> INFO - Sorting 'entry' list 'none' keys
-[193] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[213] bbl.pm:482> INFO - Writing 'bg.bbl' with encoding 'ascii'
-[215] bbl.pm:555> INFO - Output to bg.bbl
-[215] Biber.pm:105> INFO - WARNINGS: 3
+This is BibTeX, Version 0.99dThe top-level auxiliary file: bg.aux
+I found no \citation commands---while reading file bg.aux
+I found no \bibdata command---while reading file bg.aux
+I found no \bibstyle command---while reading file bg.aux
+(There were 3 error messages)

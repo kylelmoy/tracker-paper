@@ -153,6 +153,23 @@
       \verb https://code.google.com/p/eggbotcode/downloads/detail?name=eggbot_2013_08_11_2.3.4.zip&can=2&q=
       \endverb
     \endentry
+    \entry{OpenCVPython}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=fe779a56c0cd9e9c9f09b895fcb2b08c}{Howse}{H\bibinitperiod}{Joseph}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=fe779a56c0cd9e9c9f09b895fcb2b08c}{Howse}{H\bibinitperiod}{Joseph}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{fe779a56c0cd9e9c9f09b895fcb2b08c}
+      \strng{fullhash}{fe779a56c0cd9e9c9f09b895fcb2b08c}
+      \field{sortinit}{0}
+      \field{labeltitle}{{OpenCV Computer Vision with Python}}
+      \field{title}{{OpenCV Computer Vision with Python}}
+      \field{year}{2013}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

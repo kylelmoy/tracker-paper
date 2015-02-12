@@ -34,6 +34,9 @@ The components of the tracker are as follows:
 \item \textit{computer}
 \end{itemize}
 
+
+The \textit{base} and \textit{housing} components (see Figure \ref{fig:rig}) are modular, meaning any housing can be used with any base. This also allows for easy transport. \\
+
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 0.08]{zoom-in-rig}
@@ -41,7 +44,8 @@ The components of the tracker are as follows:
   \label{fig:rig}
 \end{figure}
 
-The \textit{base} and \textit{housing} components (see Figure \ref{fig:rig}) are modular, meaning any housing can be used with any base. This also allows for easy transport. \\
+
+The \textit{base} (see Figure \ref{fig:x-y}) module houses the hardware of the system. The \textit{camera} is mounted on the \textit{X-Y translation mechanism}, whose movement is controlled by two \textit{stepper motors} connected to an \textit{EiBotBoard (EBB)}.The \textit{housing} module elevates the \textit{dish stage} above the camera. 
 
 \begin{figure}[!htbp]
 \centering
@@ -51,8 +55,9 @@ The \textit{base} and \textit{housing} components (see Figure \ref{fig:rig}) are
 \end{figure}
 
 
-The \textit{base} (see Figure \ref{fig:x-y}) module houses the hardware of the system. The \textit{camera} is mounted on the \textit{X-Y translation mechanism}, whose movement is controlled by two \textit{stepper motors} connected to an \textit{EiBotBoard (EBB)}.The \textit{housing} module elevates the \textit{dish stage} above the camera. 
 
+
+It is important to note that the \textit{dish stage} (see Figure~\ref{fig:dish})  needs to be co-planar with the \textit{base} for a flat field (to maintain focus of the camera on all areas of the dish). This component can also be raised or lowered to allow for different field resolutions, allowing to worms take up more or less frame space (ie. zoom). \\ %better word?
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 0.08]{dish}
@@ -61,17 +66,6 @@ The \textit{base} (see Figure \ref{fig:x-y}) module houses the hardware of the s
 \end{figure}
 
 
-It is important to note that the \textit{dish stage} (see Figure~\ref{fig:dish})  needs to be co-planar with the \textit{base} for a flat field (to maintain focus of the camera on all areas of the dish). This component can also be raised or lowered to allow for different field resolutions, allowing to worms take up more or less frame space (ie. zoom). \\ %better word?
-
-\begin{figure}[!htbp]
-  \centering
-  \includegraphics[scale = 0.5]{system}
-  \caption{System diagram}
-  \label{fig:system}
-\end{figure}
-
-
-The schematic, detailed overview of the system can be seen in Figure~\ref{fig:system}. 
 
 \subsection{Hardware}
 This section specifies hardware parts used, pricing, and references to purchasing websites.
@@ -81,13 +75,13 @@ The stepper motors being used are easily available from the Evil Mad Scientist w
 The motor control board is the \verb|EggBotBoard| \cite{EvilMadEBB}. The price point is \$50. 
 
 \subsubsection{Imaging}
-The current camera being used is e-con System's \verb|See3CAM_10CUG|. \cite{EconCam} It is a 1.5MP USB 3.0 camera capable of up to 45 fps at a resolution of 1280 $\times$ 960. It is a monochrome camera capable of delivering directly in FOURCC code GREY format. It can also deliver images in YUYV format. It is assumed that any USB camera could be used with the system, however due to inconsistencies with OpenCV's interface with the standard linux uvc drivers, some changes need to be made in source to work with this particular camera. (Details in Section~\ref{p:Camera}) The price point is \$100.
+The current camera being used is e-con System's \verb|See3CAM_10CUG|. \cite{EconCam} It is a 1.5MP USB 3.0 camera capable of up to 45 fps at a resolution of 1280 $\times$ 960. It is a monochrome camera capable of delivering directly in FOURCC code GREY format. It can also deliver images in YUYV format. It is important to note that other cameras may be compatible with the system.
 
 \subsubsection{Computer}
-We are using a computer dedicated to the tracking system, though any laptop with similar configuration (see~\ref{app:install}) should be compatible. The computer is the Intel NUC DN2820FYKH \cite{NUC} with 8GB RAM, 500GB HD, and 2.4GHz dual-core Celeron cpu. It's quite small (4" x 4" x 2"). Most importantly, it has a USB 3.0 for the camera. The price point is \$300.\\
+We are using a computer dedicated to the tracking system, though any laptop with similar configuration (outlined in Appendix~\ref{app:install}) should be compatible. The computer is the Intel NUC DN2820FYKH \cite{NUC} with 8GB RAM, 500GB HD, and 2.4GHz dual-core Celeron cpu. It's quite small (4" x 4" x 2"). Most importantly, it has a USB 3.0 for the camera. The price point is \$300.\\
 
 \subsection{Software}
-The tracking sofware was developed using the OpenCV 2.4.9 library \cite{OpenCV} in Python. The implementation leverages the fact OpenCV's Python library is bound to methods written in C++ and handles memory allocation, and interfaces with the \verb|video4linux (V4L & V4L2)| camera drivers (for devices called ``UVC compatible''). \\
+The tracking sofware was developed using the OpenCV 3.0.0 (dev) library \cite{OpenCV} in Python. The implementation leverages the fact OpenCV's Python library is bound to methods written in C++ and handles memory allocation, and interfaces with the \verb|video4linux (V4L & V4L2)| camera drivers (for devices called ``UVC compatible''). \\
 
 This section specifies the algorithms and methods used specifically for finding the location of the worm in an image and deciding when to re-center the worm in the field of view. Also, it provides specification on how the images are captured from the camera and how the worm location is dispatched to the motor control board to move the camera.
 
@@ -164,6 +158,10 @@ A worm location is considered ridiculous if it is above a threshold set in \verb
 
 It is important to note that the parameters \verb|boundCols, boundRows|, \verb|MAXONEFRAME| and \verb|REFPING| are set in the \verb|finderArgs| dictionary in the \verb|Tracker| class defined in the \verb|tracking.py| module. This was mostly done to set many of the parameters that were changed often during testing to one place. These parameters are passed as arguments to the \verb|Finder| object when initialized from \verb|Tracker| object. 
 
+
+
+The underlying geometry of these constructs in illustrated in Figure~\ref{fig:geom}
+
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 0.5]{geom}
@@ -171,8 +169,16 @@ It is important to note that the parameters \verb|boundCols, boundRows|, \verb|M
   \label{fig:geom}
 \end{figure}
 
+The schematic, detailed overview of the system can be seen in Figure~\ref{fig:system}. 
 
-The underlying geometry of these constructs in illustrated in Figure~\ref{fig:geom}
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[scale = 0.5]{system}
+  \caption{System diagram}
+  \label{fig:system}
+\end{figure}
+
+
 
 \subsubsection{Linking Hardware to Software}
 \label{sss:hslink}
@@ -208,6 +214,9 @@ One of the main motivations to use python to write this software is that there e
                          4: 1./2, 
                          5: 1}
 \end{verbatim}
+
+
+
 
 \paragraph{Acquiring images from the camera}
 \label{p:Camera}
